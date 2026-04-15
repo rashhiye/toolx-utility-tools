@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
+# Sitemap
+Sitemap: https://toolx.netlify.app/sitemap.xml
+
 # Supported bots
 User-agent: Googlebot
 Allow: /

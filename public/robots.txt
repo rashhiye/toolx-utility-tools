@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin
 
 # Sitemap
-Sitemap: https://toolx.netlify.app/sitemap.xml
+Sitemap: https://tool-x.netlify.app/sitemap.xml
 
 # Supported bots
 User-agent: Googlebot

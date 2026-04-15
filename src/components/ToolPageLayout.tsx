@@ -19,7 +19,7 @@ interface ToolPageLayoutProps {
 
 const ToolPageLayout = ({ tool, children }: ToolPageLayoutProps) => {
   useEffect(() => {
-    document.title = `Free ${tool.name} Tool — ToolX`;
+    document.title = tool.seoTitle || `Free ${tool.name} Tool — ToolX`;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { categories, allTools } from "@/lib/tools";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -21,6 +22,17 @@ const features = [
 ];
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "ToolX - Free Online Tools | PDF, Image, Text & More";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        `${allTools.length}+ free online tools for PDF editing, image processing, text utilities, file compression & more. No sign-up required, 100% free.`
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
